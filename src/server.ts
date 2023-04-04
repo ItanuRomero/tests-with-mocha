@@ -13,6 +13,12 @@ route.get('/', (req: Request, res: Response) => {
     })
 });
 
+route.get('/other-message', (req: Request, res: Response) => {
+    res.json({
+        'message': 'this is other message'
+    })
+});
+
 app.use(route);
 
-app.listen(3000, () => 'App running on port 3000')
+export const server = app.listen(3000, () => 'App running on port 3000')
