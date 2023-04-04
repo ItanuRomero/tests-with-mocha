@@ -55,6 +55,6 @@ npm run dev
 # To test express app
 we need to install chai-http
 ``` sh
-npm i chai-http
+npm i chai-http -D
 ```
-And do it like in src/server.spec.ts
+And do it like in src/tests/server.spec.ts
