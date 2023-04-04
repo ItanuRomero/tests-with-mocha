@@ -18,3 +18,36 @@ As we can see in ´src/calculator.ts´ and ´tests/calculator.spec.ts´
 ```
 npm test
 ```
+
+## I created a app with express to test it, with the dependencies:
+```
+npm i express && npm i @types/express -D
+
+npm i typescript -D
+```
+
+## Then I created the code
+See scr/server.ts
+
+## Change tsconfig.json
+```
+{
+ "outDir": "./dist",
+ "rootDir": "./src"
+}
+```
+## Now to run the server locally
+``` sh
+npm i ts-node-dev -D
+```
+``` js
+"scripts": {
+  "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+  "build": "tsc"
+}
+```
+
+# Then we can run it using
+``` sh
+npm run dev
+```
