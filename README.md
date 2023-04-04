@@ -47,7 +47,14 @@ npm i ts-node-dev -D
 }
 ```
 
-# Then we can run it using
+## Then we can run it using
 ``` sh
 npm run dev
 ```
+
+# To test express app
+we need to install chai-http
+``` sh
+npm i chai-http
+```
+And do it like in src/server.spec.ts
